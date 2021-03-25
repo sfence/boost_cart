@@ -51,8 +51,8 @@ boost_cart:register_rail("boost_cart:detectorrail_on", {
 minetest.register_craft({
 	output = "boost_cart:detectorrail 6",
 	recipe = {
-		{"default:steel_ingot", "mesecons:wire_00000000_off", "default:steel_ingot"},
-		{"default:steel_ingot", "group:stick", "default:steel_ingot"},
-		{"default:steel_ingot", "mesecons:wire_00000000_off", "default:steel_ingot"},
+		{"hades_core:steel_ingot", "mesecons:wire_00000000_off", "hades_core:steel_ingot"},
+		{"hades_core:steel_ingot", "group:stick", "hades_core:steel_ingot"},
+		{"hades_core:steel_ingot", "mesecons:wire_00000000_off", "hades_core:steel_ingot"},
 	},
 })

@@ -222,8 +222,8 @@ function boost_cart:boost_rail(pos, amount)
 end
 
 function boost_cart:register_rail(name, def_overwrite)
-	local sound_func = default.node_sound_metal_defaults
-		or default.node_sound_defaults
+	local sound_func = hades_sounds.node_sound_metal_defaults
+		or hades_sounds.node_sound_defaults
 
 	local def = {
 		drawtype = "raillike",

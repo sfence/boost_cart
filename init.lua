@@ -7,8 +7,8 @@ end
 boost_cart = {}
 boost_cart.modpath = minetest.get_modpath("boost_cart")
 boost_cart.MESECONS = minetest.global_exists("mesecon")
-boost_cart.MTG_CARTS = minetest.global_exists("carts") and carts.pathfinder
-boost_cart.PLAYER_API = minetest.global_exists("player_api")
+boost_cart.MTG_CARTS = false
+boost_cart.PLAYER_API = false
 boost_cart.player_attached = {}
 
 local function getNum(setting)

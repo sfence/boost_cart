@@ -55,10 +55,10 @@ function cart_entity:on_rightclick(clicker)
 		self.driver = player_name
 		boost_cart:manage_attachment(clicker, self.object)
 
-		if default.player_set_animation then
+		if hades_player.player_set_animation then
 			-- player_api(/default) does not update the animation
 			-- when the player is attached, reset to default animation
-			default.player_set_animation(clicker, "stand")
+			hades_player.player_set_animation(clicker, "stand")
 		end
 	end
 end
@@ -449,8 +449,8 @@ if not boost_cart.MTG_CARTS then
 	minetest.register_craft({
 		output = "carts:cart",
 		recipe = {
-			{"default:steel_ingot", "", "default:steel_ingot"},
-			{"default:steel_ingot", "default:steel_ingot", "default:steel_ingot"},
+			{"hades_core:steel_ingot", "", "hades_core:steel_ingot"},
+			{"hades_core:steel_ingot", "hades_core:steel_ingot", "hades_core:steel_ingot"},
 		},
 	})
 end

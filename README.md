@@ -1,3 +1,6 @@
+Some adjustments and expansions for Hades game added 2015 by Glünggi
+Update to new version of boost_cart for Hades game done in 2020 by SFENCE
+
 # Boost Cart
 Based on (and fully compatible with) the mod "carts" by PilzAdam
 and the one contained in the subgame "minetest_game".

@@ -1,4 +1,6 @@
 
+local S = minetest.get_translator("boost_cart")
+
 function boost_cart:on_rail_step(entity, pos, distance)
 	-- Play rail sound
 	if entity.sound_counter <= 0 then
@@ -420,7 +422,9 @@ minetest.register_entity(":carts:cart", cart_entity)
 -- Register item to place the entity
 if not boost_cart.MTG_CARTS then
 	minetest.register_craftitem(":carts:cart", {
-		description = "Cart (Sneak+Click to pick up)",
+		description = S("Cart"),
+		_tt_help = S("Vehicle for rails.").."\n"..
+								S("Sneak+Click to pick up."),
 		inventory_image = minetest.inventorycube(
 			"cart_top.png",
 			"cart_side.png",

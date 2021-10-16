@@ -5,7 +5,7 @@ if not minetest.features.object_use_texture_alpha then
 end
 
 boost_cart = {}
-boost_cart.modpath = minetest.get_modpath("boost_cart")
+boost_cart.modpath = minetest.get_modpath("hades_boost_cart")
 boost_cart.MESECONS = minetest.global_exists("mesecon")
 boost_cart.MTG_CARTS = false
 boost_cart.PLAYER_API = false

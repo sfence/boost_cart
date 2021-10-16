@@ -23,7 +23,7 @@ function boost_cart:signal_detector_rail(pos)
 	minetest.after(0.5, boost_cart.turnoff_detector_rail, boost_cart, pos)
 end
 
-boost_cart:register_rail("boost_cart:detectorrail", {
+boost_cart:register_rail(":boost_cart:detectorrail", {
 	description = "Detector rail",
 	tiles = {
 		"carts_rail_straight_dtc.png", "carts_rail_curved_dtc.png",
@@ -34,7 +34,7 @@ boost_cart:register_rail("boost_cart:detectorrail", {
 	mesecons = {receptor = {state = "off", rules = mesecons_rules}},
 })
 
-boost_cart:register_rail("boost_cart:detectorrail_on", {
+boost_cart:register_rail(":boost_cart:detectorrail_on", {
 	description = "Detector rail ON (you hacker you)",
 	tiles = {
 		"carts_rail_straight_dtc_on.png", "carts_rail_curved_dtc_on.png",

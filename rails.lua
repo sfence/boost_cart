@@ -112,7 +112,7 @@ minetest.register_craft({
 	}
 })
 
-boost_cart:register_rail("boost_cart:startstoprail", {
+boost_cart:register_rail(":boost_cart:startstoprail", {
   description = S("Start-stop Rail"),
   _tt_help = S("Track for cart to start or stop"),
 	tiles = {
